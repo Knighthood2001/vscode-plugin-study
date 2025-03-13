@@ -13,8 +13,23 @@
 
 # 主要内容
 
-这里面很重要的一点就是这个`package.json`文件，如果这里面设置的不是很对，插件就不能完全正确的显示出来。
+这里面很重要的一点就是这个`package.json`文件，如果这里面设置的不是很对，插件就不能完全正确的显示出来。由于篇幅缘故，我将其放在最后了。
 
+---
+
+
+[01.插件界的hello world](./插件界的hello%20world/README.md)
+[02.给hello world添加启动快捷键](./给hello%20world添加启动快捷键/README.md)
+[03.资源管理器右键弹出命令](./资源管理器右键弹出命令/README.md)
+[04.编辑器右键弹出命令](./编辑器右键弹出命令/README.md)
+[05.文件夹或指定文件右键弹出命令](./文件夹或指定文件右键弹出命令/README.md)
+
+# 参考资料
+微软VSCode插件开发官方文档：https://code.visualstudio.com/docs/extensions/overview
+
+小茗同学：https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html
+
+# package.json
 这里的内容是小茗同学写的，我抄过来的。写的很详细。
 ```shell
 {
@@ -213,9 +228,3 @@
     "homepage": "https://github.com/Knighthood2001/vscode-plugin-study/README.md"
 }
 ```
-[插件界的hello world](./插件界的hello%20world/README.md)
-
-# 参考资料
-微软VSCode插件开发官方文档：https://code.visualstudio.com/docs/extensions/overview
-
-小茗同学：https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html
