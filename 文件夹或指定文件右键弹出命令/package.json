@@ -16,19 +16,19 @@
       "Other"
   ],
   "activationEvents": [
-      "*"
+      "onCommand:extension.getCurrentFilePath"
   ],
   "main": "./src/extension",
   "contributes": {
       "commands": [
           {
-              "command": "extension.demo.getCurrentFilePath",
+              "command": "extension.getCurrentFilePath",
               "title": "获取当前文件(夹)路径"
           }
       ],
       "keybindings": [
           {
-              "command": "extension.demo.getCurrentFilePath", 
+              "command": "extension.getCurrentFilePath", 
               "key": "ctrl+f9",
               "mac": "cmd+f9",
               "when": "editorTextFocus"
@@ -38,14 +38,14 @@
           "editor/context": [
               {
                   "when": "editorFocus",
-                  "command": "extension.demo.getCurrentFilePath",
-                  "group": "navigation@5"
+                  "command": "extension.getCurrentFilePath",
+                  "group": "navigation@1"
               }
           ],
           "explorer/context": [
             {
-                "when":"resourceExtname == .launch",
-                "command": "extension.demo.getCurrentFilePath",
+                "when":"resourceExtname == .js || explorerResourceIsFolder",
+                "command": "extension.getCurrentFilePath",
                 "group": "navigation"
             }
           ]

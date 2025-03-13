@@ -1,0 +1,58 @@
+{
+  "name": "vscode-plugin-study",
+  "displayName": "vscode-plugin-study",
+  "description": "VSCode插件开发示例",
+  "keywords": [
+      "vscode",
+      "plugin",
+      "demo"
+  ],
+  "version": "1.0.3",
+  "publisher": "knighthood2001",
+  "engines": {
+      "vscode": "^1.27.0"
+  },
+  "categories": [
+      "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.getCurrentFilePath"
+  ],
+  "main": "./src/extension",
+  "contributes": {
+      "commands": [
+          {
+              "command": "extension.getCurrentFilePath",
+              "title": "获取当前文件(夹)路径"
+          }
+      ],
+      "menus": {
+          "explorer/context": [
+            {
+                "command": "extension.getCurrentFilePath",
+                "group": "navigation"
+            }
+          ]
+      }
+  },
+  "scripts": {
+      "postinstall": "node ./node_modules/vscode/bin/install",
+      "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+      "typescript": "^2.6.1",
+      "vscode": "^1.1.6",
+      "eslint": "^4.11.0",
+      "@types/node": "^7.0.43",
+      "@types/mocha": "^2.2.42"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+      "url": "https://github.com/Knighthood2001/vscode-plugin-study/issues"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Knighthood2001/vscode-plugin-study"
+  }
+
+}

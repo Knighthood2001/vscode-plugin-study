@@ -6,7 +6,6 @@ const vscode = require('vscode');
  */
 exports.activate = function(context) {
     console.log('恭喜，您的扩展“vscode-plugin-demo”已被激活！');
-    console.log(vscode);
     require('./get_path')(context); // helloworld
 
 };
